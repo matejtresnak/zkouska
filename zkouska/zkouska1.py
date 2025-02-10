@@ -1,7 +1,7 @@
-from collections import Counter #pouzivam ke spocitani cetnosti
+from collections import Counter # pouzivam ke spocitani cetnosti
 import ast # pouzivam k prevodu strom stringu na strom slovnik
 
-def vytvoreni_stromu(znaky, prefix=""):
+def vytvoreni_stromu(znaky, prefix=""): # prijima serazene symboly
     
     # podminka k zastabeni rekurze
     if len(znaky) == 1: # zastaveni rekurze kdyz uz zbyva jenom jeden prvek
