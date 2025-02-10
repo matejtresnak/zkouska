@@ -139,3 +139,6 @@ elif vyber1 == "d":
 
     print(dekodovany_text)
 
+else:
+    print("spatny vstup")
+
