@@ -73,9 +73,10 @@ if vyber1 == "k":
     if vyber2 == "t":
         vstupni_text = input("Zadej text:\n")
 
-        cetnosti = Counter(vstupni_text)
+        cetnosti = Counter(vstupni_text) # vrati slovnik znak cetnost
 
-        symboly = sorted(cetnosti.items(), key=lambda x: (-x[1], x[0]))
+        symboly = sorted(cetnosti.items(), key=lambda x: (-x[1], x[0])) # seradi slovnik pomoci primarniho a sekundarniho klice x, klic x je funkce lambda ktera ma vystup tuple 
+        # primarni klic jsou cetnosti sestupne, sekundarni klidc jsou znaky vzestupne
 
         strom = vytvoreni_stromu(symboly)
 
